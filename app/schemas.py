@@ -56,3 +56,26 @@ class ExpenseOut(BaseModel):
     amount: float
     date: dt.date
     category_id: int
+
+    # ---------- Reportes ----------
+class SummaryOut(BaseModel):
+    date_from: dt.date | None
+    date_to: dt.date | None
+    total: float
+    count: int
+    average: float
+    largest_expense: ExpenseOut | None
+
+
+class CategoryReportItem(BaseModel):
+    category_id: int
+    category: str
+    total: float
+    count: int
+    percentage: float
+
+
+class MonthlyReportItem(BaseModel):
+    month: str
+    total: float
+    count: int
