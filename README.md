@@ -124,13 +124,6 @@ python -c "import secrets; print(secrets.token_hex(32))"
 - Escribir pruebas automáticas, incluida una de seguridad entre usuarios
 - Organizar un proyecto en capas y trabajar con Git y GitHub
 
-## Próximos pasos
-
-- Migrar a PostgreSQL y usar `Decimal` para los montos
-- Migraciones de base de datos con Alembic
-- Contenerización con Docker y despliegue en la nube
-- Presupuestos mensuales por categoría
-
 ## Autor
 
 **Juan Sebastián Vélez Correa**: estudiante de Ingeniería Informática
